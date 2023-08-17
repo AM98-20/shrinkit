@@ -37,11 +37,11 @@ class Form extends React.Component {
 
         //Use input, else generate
         var generatedKey = nanoid(6);
-        var generatedURL = "ShrinkIt.com/" + generatedKey
+        var generatedURL = "shrinkit-8009.onrender.com/" + generatedKey
 
         if (this.state.preferedAlias !== '') {
             generatedKey = this.state.preferedAlias
-            generatedURL = "ShrinkIt.com/" + this.state.preferedAlias
+            generatedURL = "shrinkit-8009.onrender.com/" + this.state.preferedAlias
         }
 
         const db = getDatabase();
@@ -167,7 +167,7 @@ class Form extends React.Component {
                         <label htmlFor="basic-url">Your shrinked URL</label>
                         <div className="input-group mb-3">
                             <div className="input-group-prepend">
-                                <span className="input-group-text">ShrinkIt.com/</span>
+                                <span className="input-group-text">shrinkit-8009.onrender.com/</span>
                             </div>
                             <input
                                 id="preferedAlias"
@@ -199,7 +199,7 @@ class Form extends React.Component {
                                 </div> :
                                 <div>
                                     <span className="visually-hidden spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                                    <span>Mini Link It</span>
+                                    <span>Shrink It</span>
                                 </div>
                         }
 
